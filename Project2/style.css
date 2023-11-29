@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-family: "Oxygen", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --color-background: #030207;
+    --color-white: white;
+    --color-blue: #e29f23;
+
+}
+
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-blue);
+}
+
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-background));
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero__background {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    text-decoration: ;
+}
+
+
+
+.hero__foreground {
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 40vh;
+}
+
+.hero__title {
+    font-size: 5rem;
+    font-weight: 300;
+    cursor: default;
+}
+
+.hero__text {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.section {
+    overflow: hidden;
+    text-align: center;
+    padding: 0 8rem;
+    /*v e h */
+}
+
+.section__title{
+    margin: 4rem auto;
+    font-size: 3rem;
+    font-weight: 300;
+
+}
+
+.section__img-inline,
+.section__img {
+    width: 100%;
+    border-radius: 0.75rem;
+    /*eixo x. eixo y. blur. (contract/expand). color */
+    box-shadow: 0 2rem 2rem -0.5rem rgba(20, 116, 180, 0.25) ;
+    object-position: top;
+    position: relative;
+    max-height: 30rem;
+    object-fit: cover;
+}
+
+.section__text,
+.section__text-inline{
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin: 4rem auto;
+}
+
+.section__img-inline{
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    float: left; 
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    height: 25rem;
+    width: 20rem;
+  
+}
+
+.section__text-inline{
+    margin-top: 6rem;
+    text-align: left;
+}
+
+.section__text-inline > p{
+    margin-top: 1.5rem;
+}
+
+#hangouts img{
+    object-position: center;
+}
+
+.gallery__img{
+    border-radius: .75rem;
+    height: 16rem;
+    width: 16rem;
+    object-fit: cover;
+    transform: rotate(-2deg);
+    }
+
+.gallery__img-wrapper + .gallery__img-wrapper{
+    margin-left: 3rem;
+    margin-top: 3rem;
+
+}
+.gallery__img-wrapper{
+    display: inline-block;
+    position: relative;
+
+}
+
+.gallery__img-wrapper:nth-child(even) > .gallery__img {
+    top: 1rem;
+    transform: rotate(2deg);
+}
+
+.gallery__img-wrapper::after {
+    content: "";
+    height: 1.25rem;
+    width: 1.25rem;
+    background:linear-gradient(crimson , var(--color-background) ) ;
+    display: block;
+    border-radius: 1000px;
+    position: absolute; /* posição absoluta em relação ao relative */
+    top: 0.25rem;
+    right: 1rem;
+}
+.gallery__img-wrapper:nth-child(even)::after{
+    left: 1rem;
+}
+
+footer{
+    margin-top: 4rem;
+    padding: 2rem ;
+    text-align: center;
+    background-color: #1474b4;
+    position: relative;
+}
+
+.in{
+    background-color: #0d2ace;
+    margin: auto;
+    padding: 0.1rem 0.20rem;
+    width: fit-content;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    cursor:default;
+    
+}
+
+.lidn {
+
+    font-family: 'Crimson Text', serif;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.section__footer{
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: .20rem;
+}
+
